@@ -5,3 +5,15 @@
 .backgroundNav{
     background-color: #DC8665;
 }
+
+.TextNav{
+    font-family: JustMeAgainDownHere;
+    font-size: 120px;
+    font-weight: 400px;
+
+}
+@font-face{
+    font-family: JustMeAgainDownHere;
+    src: url(../Fonts/JustMeAgainDownHere-Regular.ttf);
+}
+
