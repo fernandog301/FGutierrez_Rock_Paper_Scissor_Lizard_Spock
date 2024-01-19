@@ -12,6 +12,23 @@
     font-weight: 400px;
 
 }
+.TextNavBar{
+    font-family: JustMeAgainDownHere;
+    font-size: 64px;
+    color: #ffff;
+}
+.bodyTxt{
+    font-family: JustMeAgainDownHere;
+    font-size: 96px;
+    color: black;
+}
+
+.buttonTxt{
+    font-family: JustMeAgainDownHere;
+    font-size: 64px;
+    color: black;
+}
+
 @font-face{
     font-family: JustMeAgainDownHere;
     src: url(../Fonts/JustMeAgainDownHere-Regular.ttf);
