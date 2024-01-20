@@ -15,10 +15,22 @@
   <body class="body">
     <!-- Start Nav -->
 
-    <div class="container-fluid backgroundNav ">
+    <div class="container-fluid backgroundNav">
       <div class="row px-2 d-flex justify-content-center">
         <div class="col-6">
-          <a style="text-decoration: none" class="TextNavBar"><button onclick="HomeMenu()" style="background: transparent; text-decoration: none; border: transparent;" class="TextNavBar">Home</button></a>
+          <a style="text-decoration: none" class="TextNavBar"
+            ><button
+              onclick="HomeMenu()"
+              style="
+                background: transparent;
+                text-decoration: none;
+                border: transparent;
+              "
+              class="TextNavBar"
+            >
+              Home
+            </button></a
+          >
         </div>
         <div class="col-6 d-flex justify-content-end">
           <a class="TextNavBar" style="text-decoration: none">GameRules</a>
@@ -104,6 +116,72 @@
     </div>
 
     <!-- End of page One -->
+    <!-- GamePage -->
+    <div id="gameDiv" class="d-flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <h1 class="bodyTxt" id="playerText">Player:</h1>
+        </div>
+        <div class="col">
+          <h1 class="bodyTxt" id="computerText">CPU:</h1>
+        </div>
+        <div class="col">
+          <h1 class="bodyTxt" id="resultText">Result:</h1>
+        </div>
+      </div>
+
+      <!-- <button class="buttonTxt">ROCK</button>
+      <button class="buttonTxt">PAPER</button>
+      <button class="buttonTxt">SCISSORS</button> -->
+      <!-- <div class="row">
+        <div class="col">
+        <button id="rock">Rock</button>
+        </div>
+        <div class="col">
+        <button id="paper">Paper</button>
+        </div>
+        <div class="col">
+        <button id="scissors">Scissors</button>
+        </div>
+        <div class="col">
+        <button id="lizard">Lizard</button>
+        </div>
+        <div class="col">
+        <button id="spock">Spock</button>
+        </div> -->
+      <div class="row">
+        <button onclick="playGame('rock')">Rock</button>
+        <button onclick="playGame('paper')">Paper</button>
+        <button onclick="playGame('scissors')">Scissors</button>
+        <button onclick="playGame('lizard')">Lizard</button>
+        <button onclick="playGame('spock')">Spock</button>
+      </div>
+    </div>
+    <!-- End GamePage -->
+
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <label for="player1" id="player1">Player 1:</label>
+          <button value="rock" class="buttonTxt">Rock</button>
+          <button value="paper" class="buttonTxt">Paper</button>
+          <button value="scissors" class="buttonTxt">Scissors</button>
+          <button value="lizard" class="buttonTxt">Lizard</button>
+          <button value="spock" class="buttonTxt">Spock</button>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <label for="player2" id="player2" class="buttonTxt">Player 2:</label>
+          <button value="rock" class="buttonTxt">Rock</button>
+          <button value="paper">Paper</button>
+          <button value="scissors" class="buttonTxt">Scissors</button>
+          <button value="lizard" class="buttonTxt">Lizard</button>
+          <button value="spock" class="buttonTxt">Spock</button>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button onclick="playGame()">Play</button>
+      </div>
+    </div>
 
     <script src="./scripts/apps.js"></script>
     <script
