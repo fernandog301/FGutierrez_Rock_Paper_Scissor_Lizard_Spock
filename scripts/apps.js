@@ -66,6 +66,7 @@ const targetWins = {
 };
 
 
+
 let roundNum = document.getElementById("roundNum");
 if (roundNum) {
   roundNum.textContent = `Game Counter: ${roundNumber}`;
@@ -124,8 +125,8 @@ async function getComputerChoice() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.text();
-    const computerChoice = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-    return computerChoice[data];
+    let computerChoice = data
+    return computerChoice [data];
   } catch (error) {
     console.error('Error fetching computer choice:', error);
   }
@@ -175,4 +176,3 @@ function checkWinner(player, computer) {
     return "You lose!";
   }
 }
-
