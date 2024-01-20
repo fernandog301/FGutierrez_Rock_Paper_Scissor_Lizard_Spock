@@ -27,8 +27,8 @@ function myFunction() {
     }
   }
   function gameMode(){
-    if()
-  }
+    // if()
+  };
 
   document.getElementById("okButton").addEventListener(
     "click",
