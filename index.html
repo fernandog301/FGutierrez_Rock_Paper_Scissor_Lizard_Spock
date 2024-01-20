@@ -14,13 +14,14 @@
   </head>
   <body class="body">
     <!-- Start Nav -->
-    <div class="container-fluid backgroundNav">
+
+    <div class="container-fluid backgroundNav ">
       <div class="row px-2 d-flex justify-content-center">
         <div class="col-6">
-          <a href="./pages/Pageone.html" style="text-decoration: none;" class="TextNavBar">Home</a>
+          <a style="text-decoration: none" class="TextNavBar"><button onclick="HomeMenu()" style="background: transparent; text-decoration: none; border: transparent;" class="TextNavBar">Home</button></a>
         </div>
         <div class="col-6 d-flex justify-content-end">
-          <a class="TextNavBar" style="text-decoration: none;">GameRules</a>
+          <a class="TextNavBar" style="text-decoration: none">GameRules</a>
         </div>
       </div>
 
@@ -33,31 +34,76 @@
     <!-- End Nav -->
 
     <!-- StartBody -->
-    <div class="container my-5">
-      <div class="row">
-        <p class="bodyTxt p-5 d-flex justify-content-center">Choose Your Mode</p>
+    <div id="myDIV AllForMenu">
+      <div class="container my-5">
+        <div class="row">
+          <p class="bodyTxt p-5 d-flex justify-content-center">
+            Choose Your Mode
+          </p>
+        </div>
+        <div class="row mb-5 justify-content-center">
+          <div class="col-5 d-flex justify-content-center">
+            <button
+              onclick="myFunction()"
+              class="px-5 py-3 buttonTxt"
+              style="border-radius: 10px"
+            >
+              Single Player
+            </button>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-5 d-flex justify-content-center">
+            <button class="px-5 py-3 buttonTxt" style="border-radius: 10px">
+              Two Player
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="row mb-5 justify-content-center">
-        <div class="col-5 d-flex justify-content-center">
-          <button class="px-5 py-3 buttonTxt" style="border-radius: 10px;">Single Player </button>
-
+    </div>
+    <!-- start Of Page One  -->
+    <div id="myHidden AllForMenu" class="myHidden d-none">
+      <div class="container my-5">
+        <div class="row my-3">
+          <p class="bodyTxt d-flex justify-content-center">
+            Choose Game Option
+          </p>
         </div>
-        <div class="col-1">
-          
+        <div class="row my-5">
+          <div class="col-5">
+            <button
+              class="buttonTxt"
+              style="border-radius: 10px; height: 96px; width: 349px"
+            >
+              One And Done
+            </button>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-5">
+            <button
+              class="buttonTxt"
+              style="border-radius: 10px; height: 96px; width: 349px"
+            >
+              Best To Seven
+            </button>
+          </div>
         </div>
-        <div class="col-5  d-flex justify-content-center">
-          <button class="px-5 py-3 buttonTxt" style="border-radius: 10px;">Two Player </button>
+        <div class="row my-5">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <button
+              type="button"
+              class="buttonTxt"
+              style="border-radius: 10px; height: 96px; width: 349px"
+            >
+              Best to Five
+            </button>
+          </div>
+          <div class="col-4"></div>
         </div>
       </div>
     </div>
 
-
-
-
-
-
-
-
+    <!-- End of page One -->
 
     <script src="./scripts/apps.js"></script>
     <script
