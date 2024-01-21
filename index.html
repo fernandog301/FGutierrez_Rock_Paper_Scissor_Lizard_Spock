@@ -91,7 +91,7 @@
           </div>
           <div class="col-2"></div>
           <div class="col-5">
-            <button 
+            <button
               class="buttonTxt"
               style="border-radius: 10px; height: 96px; width: 349px"
             >
@@ -150,39 +150,64 @@
         <button id="spock">Spock</button>
         </div> -->
       <div class="row">
-        <button onclick="playGame('rock')">Rock</button>
-        <button onclick="playGame('paper')">Paper</button>
-        <button onclick="playGame('scissors')">Scissors</button>
-        <button onclick="playGame('lizard')">Lizard</button>
-        <button onclick="playGame('spock')">Spock</button>
+        <button id="rock">Rock</button>
+        <button id="paper" >Paper</button>
+        <button id="scissors">Scissors</button>
+        <button id="lizard">Lizard</button>
+        <button id="spock">Spock</button>
       </div>
+      <button onclick="playGame()"> Shoot </button>
     </div>
     <!-- End GamePage -->
 
     <div class="container">
       <div class="d-flex justify-content-center">
-        <label for="player1" id="player1">Player 1:</label>
-          <button value="rock" class="buttonTxt">Rock</button>
-          <button value="paper" class="buttonTxt">Paper</button>
-          <button value="scissors" class="buttonTxt">Scissors</button>
-          <button value="lizard" class="buttonTxt">Lizard</button>
-          <button value="spock" class="buttonTxt">Spock</button>
+        <label for="player1">Player 1:</label>
+        <select name="player1" id="player1">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+        <option value="lizard">Lizard</option>
+        <option value="spock">Spock</option>
+      </select>
       </div>
 
       <div class="d-flex justify-content-center">
-        <label for="player2" id="player2" class="buttonTxt">Player 2:</label>
-          <button value="rock" class="buttonTxt">Rock</button>
-          <button value="paper">Paper</button>
-          <button value="scissors" class="buttonTxt">Scissors</button>
-          <button value="lizard" class="buttonTxt">Lizard</button>
-          <button value="spock" class="buttonTxt">Spock</button>
+        <label for="player2">Player 2:</label>
+        <select id="player2">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+          <option value="lizard">Lizard</option>
+          <option value="spock">Spock</option>
+        </select>
       </div>
 
       <div class="d-flex justify-content-center">
-        <button id="shootBtn" >Play</button>
+        <button id="shootBtn">Play</button>
       </div>
     </div>
 
+
+
+    <div class="container backgroundNav my-5 p-4">
+      <div class="row my-3 TextNavBar d-flex justify-content-center">
+        Player One Wins
+      </div>
+      
+      <div class="row my-3 TextNavBar d-flex justify-content-center">
+        Thank You For Playing ^w^
+      </div>
+  
+      <div class="row my-3 d-flex justify-content-center">
+        <a href="./index.html"><button style="border-radius: 10px; height: 96px; width: 349px;" class="buttonTxt"> Main Menu</button></a>
+      </div>
+  
+      <div class="row my-5 d-flex justify-content-center">
+        <a href="./index.html"><button style="border-radius: 10px; height: 96px; width: 349px;" class="buttonTxt">Play Again</button></a>
+      </div>
+  
+  </div>
     <script src="./scripts/apps.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

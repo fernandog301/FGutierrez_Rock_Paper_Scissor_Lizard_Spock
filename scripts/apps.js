@@ -166,13 +166,12 @@ function checkWinner(player, computer) {
   }else if (
     (player === "rock" && (computer === "scissors" || computer === "lizard")) ||
     (player === "paper" && (computer === "rock" || computer === "spock")) ||
-    (player === "scissors" &&
-      (computer === "paper" || computer === "lizard")) ||
+    (player === "scissors" && (computer === "paper" || computer === "lizard")) ||
     (player === "lizard" && (computer === "spock" || computer === "paper")) ||
     (player === "spock" && (computer === "rock" || computer === "scissors"))
   ) {
-    return "You win!";
+    return console.log("You win!");
   } else {
-    return "You lose!";
+    return console.log("You lose!");
   }
 }
