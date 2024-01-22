@@ -73,7 +73,7 @@
       </div>
     </div>
     <!-- start Of Page One  -->
-    <div id="myHidden AllForMenu" class="myHidden d-none">
+    <div id="myHidden AllForMenu" class="myHidden d-">
       <div class="container my-5">
         <div class="row my-3">
           <p class="bodyTxt d-flex justify-content-center">
@@ -82,33 +82,38 @@
         </div>
         <div class="row my-5">
           <div class="col-5">
-            <button
+            <!-- <button
               class="buttonTxt"
               style="border-radius: 10px; height: 96px; width: 349px"
             >
               One And Done
-            </button>
+            </button> -->
+              <button onclick="setGameMode(1)">1 Win</button>
+
           </div>
           <div class="col-2"></div>
           <div class="col-5">
-            <button
+            <!-- <button
               class="buttonTxt"
               style="border-radius: 10px; height: 96px; width: 349px"
             >
               Best To Seven
-            </button>
+            </button> -->
+            <button onclick="setGameMode(3)">3 out of 5</button>
           </div>
         </div>
         <div class="row my-5">
           <div class="col-4"></div>
           <div class="col-4">
-            <button
+            <!-- <button
               type="button"
               class="buttonTxt"
               style="border-radius: 10px; height: 96px; width: 349px"
             >
               Best to Five
-            </button>
+            </button> -->
+            <button onclick="setGameMode(4)">4 out of 7</button>
+
           </div>
           <div class="col-4"></div>
         </div>
@@ -120,35 +125,17 @@
     <div id="gameDiv" class="d-flex justify-content-center">
       <div class="row">
         <div class="col">
-          <h1 class="bodyTxt" id="playerText">Player:</h1>
+          <h1 class="bodyTxt" id="playerText">Player: </h1>
         </div>
         <div class="col">
-          <h1 class="bodyTxt" id="computerText">CPU:</h1>
+          <h1 class="bodyTxt" id="computerText">CPU: </h1>
         </div>
         <div class="col">
-          <h1 class="bodyTxt" id="resultText">Result:</h1>
+          <h1 class="bodyTxt" id="resultText">Result: </h1>
         </div>
       </div>
 
-      <!-- <button class="buttonTxt">ROCK</button>
-      <button class="buttonTxt">PAPER</button>
-      <button class="buttonTxt">SCISSORS</button> -->
-      <!-- <div class="row">
-        <div class="col">
-        <button id="rock">Rock</button>
-        </div>
-        <div class="col">
-        <button id="paper">Paper</button>
-        </div>
-        <div class="col">
-        <button id="scissors">Scissors</button>
-        </div>
-        <div class="col">
-        <button id="lizard">Lizard</button>
-        </div>
-        <div class="col">
-        <button id="spock">Spock</button>
-        </div> -->
+      
       <div class="row">
         <button id="rock">Rock</button>
         <button id="paper" >Paper</button>
@@ -156,7 +143,7 @@
         <button id="lizard">Lizard</button>
         <button id="spock">Spock</button>
       </div>
-      <button onclick="playGame()"> Shoot </button>
+      <button onclick="playGameTwo()"> Shoot </button>
     </div>
     <!-- End GamePage -->
 
@@ -184,14 +171,14 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <button id="shootBtn">Play</button>
+        <button onclick="playGame()">Play</button>
       </div>
     </div>
 
 
 
     <div class="container backgroundNav my-5 p-4">
-      <div class="row my-3 TextNavBar d-flex justify-content-center">
+      <div id="finalText" class="row my-3 TextNavBar d-flex justify-content-center">
         Player One Wins
       </div>
       
